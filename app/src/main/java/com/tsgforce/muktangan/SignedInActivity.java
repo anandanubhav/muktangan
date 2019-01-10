@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -33,6 +34,15 @@ public class SignedInActivity extends AppCompatActivity {
         setUserDetails();
 
         initImageLoader();
+    }
+
+    public void studentTrackerNavigate(View view) {
+
+        Intent intent = new Intent(SignedInActivity.this, StudentAssesmentActivity.class);
+        startActivity(intent);
+    }
+
+    public void kpaNvaigate(View view) {
     }
 
     private void initImageLoader(){

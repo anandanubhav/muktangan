@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/relLayout1"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assessment Subjects"
+                android:textSize="25sp"
+                android:textColor="@color/Black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:id="@+id/subjectAssessment"/>
+
+            <TextView
+                android:id="@+id/subject1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subjectAssessment"
+                android:layout_marginTop="50dp"
+                android:text="English"
+                android:textColor="@color/linkBlue"
+                android:onClick="evaluateSubject"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/subject2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject1"
+                android:layout_marginTop="20dp"
+                android:text="Maths"
+                android:textColor="@color/linkBlue"
+                android:onClick="evaluateSubject"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/subject3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject2"
+                android:layout_marginTop="20dp"
+                android:text="Social Science"
+                android:textColor="@color/linkBlue"
+                android:onClick="evaluateSubject"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/subject4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject3"
+                android:layout_marginTop="20dp"
+                android:text="Language"
+                android:textColor="@color/linkBlue"
+                android:onClick="evaluateSubject"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/subject5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject4"
+                android:layout_marginTop="20dp"
+                android:text="Marathi"
+                android:textColor="@color/linkBlue"
+                android:onClick="evaluateSubject"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

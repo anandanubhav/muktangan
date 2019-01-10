@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/relLayout1"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Assessment"
+                android:textSize="25sp"
+                android:textColor="@color/Black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:id="@+id/studentAssessment"/>
+
+            <TextView
+                android:id="@+id/student1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/studentAssessment"
+                android:layout_marginTop="50dp"
+                android:text="Student 1"
+                android:textColor="@color/linkBlue"
+                android:onClick="showSubject"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/student2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/student1"
+                android:layout_marginTop="20dp"
+                android:text="Student 2"
+                android:textColor="@color/linkBlue"
+                android:onClick="showSubject"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/student3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/student2"
+                android:layout_marginTop="20dp"
+                android:text="Student 3"
+                android:textColor="@color/linkBlue"
+                android:onClick="showSubject"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/student4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/student3"
+                android:layout_marginTop="20dp"
+                android:text="Student 4"
+                android:textColor="@color/linkBlue"
+                android:onClick="showSubject"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/student5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/student4"
+                android:layout_marginTop="20dp"
+                android:text="Student 5"
+                android:textColor="@color/linkBlue"
+                android:onClick="showSubject"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
